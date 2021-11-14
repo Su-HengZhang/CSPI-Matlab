@@ -1,1 +1,1 @@
-# Complex-amplitude single-pixel imaging using coherent structured illumination
+# Matlab source code for numerical simulation of CSPI
