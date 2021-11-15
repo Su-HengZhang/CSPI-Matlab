@@ -8,7 +8,7 @@ lambda=632.8e-6;
 % the focal length of the front lens of the 4f system is 300 mm
 focal_lens=300;
 
-% the tffective aperture diameter
+% the effective aperture diameter in our experiments
 dia_eff=40;
 
 % the cutoff frequency of the 4f system
@@ -72,9 +72,11 @@ kl=(0:3);
 mdata=zeros(Tnum,4);
 
 %%
+% one pixel of basis pattern 
 ones_samp_dz=ones(samp*digzoom);
-% system4filter
-filter_4f=lpfilter('ideal',Ns*2,Ns*2,Dc);
+
+% ideal low pass filter of the 4f system
+lp4f=lpfilter('ideal',Ns*2,Ns*2,Dc);
 
 %%
 Cnum=1;
@@ -90,7 +92,7 @@ for v=vl
         for k=kl
             Pk=P*exp(1j*pi*k/2);
             Ek=Pk+exp(-1j*phi);
-            Ek=system4filter(Ek,filter_4f);
+            Ek=system4filter(Ek,lp4f);
             Ek_sum=sum(sum(Ek.*f_org));
             Ik_sum=abs(Ek_sum)^2;
             mdata(Cnum,k+1)=Ik_sum;
