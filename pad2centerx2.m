@@ -1,4 +1,8 @@
-function fp=pad2centerx2(f,M)
+function fp=pad2centerx2(f)
+%PAD2CENTERX2 pad around matrix with 0 to 2x
+%    fp=pad2centerx2(f) pad around f with 0 to 2 times its size
+
+[M,~]=size(f);
 
 Mp=2*M;
 fp=zeros(Mp);

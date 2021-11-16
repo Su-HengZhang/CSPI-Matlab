@@ -12,13 +12,13 @@ focal_lens=300;
 dia_eff=40*1;
 
 % the cutoff frequency of the 4f system
-freq_cut=dia_eff/(2*lambda*focal_lens)
+freq_cut=dia_eff/(2*lambda*focal_lens);
 
 % the LCoS pixel pitch is 8e-3 mm
 del_lcos = 8e-3;
 
 % set the sampling points of each LCoS pixel pitch
-samp=32;
+samp=16;
 
 % the numerical calculation of sampling interval (mm)
 del_samp=del_lcos/samp;

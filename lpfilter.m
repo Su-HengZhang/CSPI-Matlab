@@ -1,6 +1,6 @@
 function [H,D]=lpfilter(type,M,N,Dc,n)
-%LPFILTER Computes frequency domain lowpass filters.
-%   H=LPFILTER(TYPE,M,N,Dc,n) creates the transfer function
+%LPFILTER computes frequency domain lowpass filters.
+%   [H,D]=lpfilter(type,M,N,Dc,n) creates the transfer function
 %   of a lowpass filter, H, of the specified TYPE and size
 %   (M-by-N).
 

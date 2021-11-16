@@ -26,7 +26,7 @@ del_samp=del_lcos/samp;
 
 %%
 % set Hadamard matrix order
-N=4;
+N=128;
 
 % set the imaging region size
 N_im=128;
@@ -72,7 +72,7 @@ kl=(0:3);
 mdata=zeros(Tnum,4);
 
 %%
-% one pixel of basis pattern 
+% one pixel of basis pattern
 ones_samp_dz=ones(samp*digzoom);
 
 % ideal low pass filter of the 4f system
@@ -88,7 +88,7 @@ for v=vl
     for u=ul
         P=H(u,:)'*H(v,:);
         P=kron(P,ones_samp_dz);
-        P=pad2centerx2(P,Ns);
+        P=pad2centerx2(P);
         for k=kl
             Pk=P*exp(1j*pi*k/2);
             Ek=Pk+exp(-1j*phi);

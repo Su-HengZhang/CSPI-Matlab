@@ -1,4 +1,7 @@
 function [fp,ml_c,nl_c]=pad2center(f,Mp,Np)
+%PAD2CENTER pad around matrix with 0
+%    [fp,ml_c,nl_c]=pad2center(f,Mp,Np) pad around f with 0 to Mp*Np matrix fp
+%    ml_c, nl_c is the indexes of f in fp
 
 [M,N]=size(f);
 
