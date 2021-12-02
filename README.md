@@ -27,3 +27,12 @@
            test chart (partial) with 1 µm sampling interval
 
 ## Reference
+
+1. H-Y Hou et al. Complex-amplitude single-pixel imaging using coherent
+    structured illumination[J]. Optics Express, 2021, 29(25): 41827–41841.
+    DOI:[10.1364/OE.443258](https://doi.org/10.1364/OE.443258).
+
+2. H-Y Hou et al. Supplementary document for Complex-amplitude single-pixel
+    imaging using coherent structured illumination -
+    [5552671.pdf](https://doi.org/10.6084/m9.figshare.17074667.v2).
+    Optica Publishing Group.
